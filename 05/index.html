@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rejestr mycia autobusów</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Rejestr mycia autobusów</h1>
+
+      <section class="card">
+        <h2>Dodaj umyty autobus</h2>
+        <form id="wash-form" novalidate>
+          <label>
+            Numer autobusu
+            <input id="busNumber" name="busNumber" type="text" placeholder="np. 145" required />
+          </label>
+
+          <label>
+            Data mycia
+            <input id="washDate" name="washDate" type="date" required />
+          </label>
+
+          <button type="submit">Wyślij</button>
+        </form>
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+      </section>
+
+      <section class="card">
+        <h2 id="month-title">Umyte autobusy w tym miesiącu</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Numer autobusu</th>
+              <th>Data mycia</th>
+            </tr>
+          </thead>
+          <tbody id="monthly-table-body"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
