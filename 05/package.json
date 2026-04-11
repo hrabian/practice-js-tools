@@ -1,0 +1,13 @@
+{
+  "name": "bus-wash-registry",
+  "version": "1.0.0",
+  "description": "Frontend + SQLite backend do rejestrowania mycia autobusów",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}

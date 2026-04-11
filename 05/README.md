@@ -4,9 +4,25 @@
 
 # `#05` JavaScript: Narzędzia
 
-Przed Tobą ostatnie zadanie! Wykonaj *[pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)* :)
+Aplikacja rejestruje daty umytych autobusów i zapisuje je do bazy **SQLite**.
 
-&nbsp;
-> :no_entry: *Jeśli nie posiadasz materiałów do tego zadania tj. **PDF + wideo, projekt + Code Review**, znajdziesz je na stronie [devmentor.pl](https://devmentor.pl/workshop-js-tools/)*
+## Jak uruchomić
+
+1. Przejdź do katalogu `05`.
+2. Zainstaluj zależności:
+
+   ```bash
+   npm install
+   ```
+
+3. Uruchom serwer:
+
+   ```bash
+   npm start
+   ```
+
+4. Otwórz w przeglądarce adres `http://localhost:3000`.
+
+Po wysłaniu formularza pojawia się komunikat **"Dodano umyty autobus."**, a tabela wyświetla autobusy umyte w bieżącym miesiącu.
 
 > :arrow_left: [*poprzednie zadanie*](./../04) | ~~*następne zadanie*~~ :arrow_right:
